@@ -1,72 +1,55 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>S. Meenakshi - Portfolio</title>
+    <title>Meenakshi S - Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #ffccd5;
             margin: 0;
             padding: 0;
-            background-color: #d00031;
         }
         .header {
-            background-color: #c4ff4d;
-            text-align: center;
+            background-color: #aaffaa;
             padding: 20px;
+            text-align: center;
         }
         .header h1 {
             margin: 0;
-            color: #5a2d0c;
+            color: #333;
         }
-        .header p {
-            margin: 5px 0;
-            font-size: 18px;
-        }
-        .navbar {
-            display: flex;
-            justify-content: center;
-            background-color: #900028;
+        .nav {
+            background-color: #d10000;
             padding: 10px;
+            text-align: center;
         }
-        .navbar a {
+        .nav a {
             color: white;
             text-decoration: none;
             margin: 0 15px;
-            font-size: 18px;
+            font-weight: bold;
         }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
+        .section {
             background: white;
-            padding: 20px;
+            margin: 20px;
+            padding: 15px;
             border-radius: 10px;
         }
-        h2 {
-            color: #900028;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        ul li {
-            margin: 5px 0;
-        }
-        .resume-btn {
+        .resume-button {
             display: block;
-            text-align: center;
+            width: 150px;
+            margin: 10px auto;
+            padding: 10px;
             background: black;
             color: white;
-            padding: 10px;
+            text-align: center;
             border-radius: 5px;
             text-decoration: none;
-            width: 150px;
-            margin: 20px auto;
         }
         .footer {
-            background: black;
+            background-color: black;
             color: white;
             text-align: center;
             padding: 10px;
@@ -77,11 +60,11 @@
 <body>
 
     <div class="header">
-        <h1>S. Meenakshi</h1>
-        <p>BCA Student at Madras University</p>
+        <h1>Meenakshi S</h1>
+        <p>BSc Student</p>
     </div>
 
-    <div class="navbar">
+    <div class="nav">
         <a href="#about">About</a>
         <a href="#education">Education</a>
         <a href="#skills">Skills</a>
@@ -89,31 +72,39 @@
         <a href="#resume">Resume</a>
     </div>
 
-    <div class="container">
-        <h2 id="about">About Me</h2>
-        <p>Currently, I am pursuing my BSc degree. Passionate about coding and technology.</p>
+    <div id="about" class="section">
+        <h2>About Me</h2>
+        <p>Currently, I am pursuing my BSc degree.</p>
+    </div>
 
-        <h2 id="education">Education</h2>
-        <p><strong>Madras University</strong> - Bachelor of Computer Applications (BCA)</p>
+    <div id="education" class="section">
+        <h2>Education</h2>
+        <p>Madras University, BSc</p>
+    </div>
 
-        <h2 id="skills">Skills</h2>
+    <div id="skills" class="section">
+        <h2>Skills</h2>
         <ul>
             <li>Python</li>
             <li>Java</li>
             <li>Computer Architecture</li>
         </ul>
+    </div>
 
-        <h2 id="projects">Projects</h2>
+    <div id="projects" class="section">
+        <h2>Projects</h2>
         <ul>
-            <li>Hangman Game using Java</li>
+            <li>Hangman Game using Python</li>
         </ul>
+    </div>
 
-        <h2 id="resume">Resume</h2>
-        <a href="#" class="resume-btn">Download CV</a>
+    <div id="resume" class="section">
+        <h2>Resume</h2>
+        <a href="#" class="resume-button">Download CV</a>
     </div>
 
     <div class="footer">
-        © 2025 S. Meenakshi
+        &copy; 2025 Meenakshi S
     </div>
 
 </body>
